@@ -66,6 +66,7 @@ fn organize_file(entry: &DirEntry) {
                     move_to_uncategorized(&file_path);
                 }
             }
+
             None => {
                 println!("Unknown or unsupported CSV type: {:?}", file_path);
                 move_to_uncategorized(&file_path);
